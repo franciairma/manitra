@@ -1,0 +1,41 @@
+@import 'bases/_variable.scss';
+.navbar {
+    background: #2b3141;
+}
+nav {
+    a {
+        color: $secondary-color;
+        text: {
+            transform: uppercase;
+        }
+    }
+    li {
+        img {
+            width: 70%;
+           display: block;
+           margin: auto;
+        }
+        &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5) {
+            padding-top: 15px;
+        }
+    }
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+.navbar {
+    .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    
+    .navbar-collapse {
+        text-align: center;
+    }
+}

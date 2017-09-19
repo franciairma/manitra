@@ -1,0 +1,61 @@
+@import 'bases/_variable.scss';
+
+body {
+    font: {
+        family: $font-stack;
+        size: $font-size-para;
+    }
+    color: $primary-color;
+}
+h1 {
+    font-size: $font-size-h1;
+    padding-bottom: 35px;
+    text-transform: uppercase;
+}
+ h2 {
+    font-size: $font-size-h2;
+ }
+
+ h3 {
+     font-size: $font-size-h3;
+ }
+
+img {
+    width: 100%;
+}
+
+.auto {
+    width: auto;
+}
+
+hr {
+    margin: 50px auto 50px;
+    position: relative;
+}
+hr { 
+    background: url('../images/arrow.png') no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: 18px;
+    border: 0;
+    position: relative;
+}
+hr:before,
+hr:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #d7d7d7;
+    height: 2px;
+    top: 8px;
+}
+hr:before {
+    left: 0;
+    right: 50%;
+    margin-right: 40px;
+}
+hr:after {
+    right: 0;
+    left: 50%;
+    margin-left: 40px;
+}
